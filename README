@@ -1,0 +1,13 @@
+Jonathan Wick
+CSCI-3753 Programming Assignment 2
+DUE 10/4/20
+
+Place Makefile and pa2_char_driver.c into /home/kernel/modules folder.
+execute: make -C /lib/modules/$(uname -r)/build M=$PWD
+execute: sudo insmod p2_char_driver.ko
+
+Run test_app.c to test indput of driver file. 
+
+Write string to file.  Then seek the front of the device buffer, and read the number of characters to see what you wrote.  
+
+
